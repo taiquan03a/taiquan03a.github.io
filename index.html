@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+  </head>
+  <body>
+    <div class="card">
+        <div class="card__img">
+            <img src="anh.jpg" alt="" />
+        </div>
+        <div class="in4">
+            <table>
+                <tr>
+                    <td>Họ và tên:</td>
+                    <td>Nguyễn Tài Quân</td>
+                </tr>
+                <tr>
+                    <td>Mã sinh viên:</td>
+                    <td>B21DCCN614</td>
+                </tr>
+                <tr>
+                    <td>Lớp:</td>
+                    <td>D21CQCN02-B</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+  </body>
+</html>
+<style>
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card {
+        display: flex;
+        width: 600px;
+        height: 300px;
+        border-radius: 10px;
+        background-color: #242628;
+        overflow: hidden;
+        margin: 0 30px;
+    
+    }
+    
+    .card__img {
+        width: 140px;
+        height: 180px;
+        overflow: hidden;
+        transition: 0.25s;
+        margin: 50px auto;
+        transform: translateY(25px);
+        cursor: pointer;
+    }
+    .in4{
+        margin: auto;
+        flex-basis: 60%;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    td {
+        color: white;
+        padding: 12px;
+        padding-left: 12px;
+        font-size: 20px;
+        text-align: left;
+    }
+</style>
